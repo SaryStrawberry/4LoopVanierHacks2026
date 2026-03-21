@@ -1,7 +1,7 @@
 import { Buffer } from "buffer";
 async function main() {
-    const res = await fetch("http://ctf26.vanierhacks.net/reverseEngineering/youKnowWhoToCall", {
-        method: "POST",
+    const res = await fetch("http://ctf26.vanierhacks.net/dataHandling/creditCards", {
+        method: "GET",
         headers: {
             "Content-Type": "application/json",
             Authorization: "Basic " +
@@ -9,13 +9,13 @@ async function main() {
                     "dgdtr:62c65c58-9928-4822-af74-789c1ee2dbf5",
                     "ascii"
                 ).toString("base64")
-        },
-        body: JSON.stringify({
-            verificationCode: "7305e92a-c4bb-4455-9cf4-20b7f430721a"
-        })
+        }
     });
 
-    console.log(await res.json());
+    const data = await res.json();
+
+    console.log(data[0]);
 }
 
 main();
+

@@ -1,6 +1,6 @@
 import { Buffer } from "buffer";
 async function main() {
-    const res = await fetch("http://ctf26.vanierhacks.net/reverseEngineering/youKnowWhoToCall", {
+    const res = await fetch("http://ctf26.vanierhacks.net/networking/wiresharkChallenge", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -11,7 +11,7 @@ async function main() {
                 ).toString("base64")
         },
         body: JSON.stringify({
-            verificationCode: "7305e92a-c4bb-4455-9cf4-20b7f430721a"
+            verificationCode: "4426ecee-6edd-483a-9331-f3e7ab87321e"
         })
     });
 
