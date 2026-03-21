@@ -1,10 +1,12 @@
 Things to do:
 ```
-1. Make team on Discord and ticket
-2. Make team on website
-3. Review challenges and sort
-4. Make Java http request template
-5. Make Java project in repo
+1. Make team on Discord and ticket [DONE]
+2. Make team on website [DONE]
+3. Make Java project in repo [DONE]
+4. Review challenges and sort
+5. Make Java http request template
+6. Test Java http request on simplest challenge
+
 
 
 
