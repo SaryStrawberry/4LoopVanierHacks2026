@@ -11,7 +11,7 @@ async function main() {
                 ).toString("base64")
         },
         body: JSON.stringify({
-            verificationCode: " flag_{4426ecee-6edd-483a-9331-f3e7ab87321e}"
+            verificationCode: "flag_{4426ecee-6edd-483a-9331-f3e7ab87321e}"
         })
     });
 
