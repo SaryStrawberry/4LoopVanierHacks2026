@@ -2,8 +2,9 @@ Things to do:
 ```
 1. Make team on Discord and ticket
 2. Make team on website
-3. review challenges and sort
+3. Review challenges and sort
 4. Make Java http request template
+5. Make Java project in repo
 
 
 
