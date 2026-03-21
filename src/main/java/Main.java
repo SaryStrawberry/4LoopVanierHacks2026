@@ -1,5 +1,32 @@
+package main.java;
+
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, world!");
+        String teamId = "dgdtr";
+        String teamAuthToken = "62c65c58-9928-4822-af74-789c1ee2dbf5";
+
+        String auth = teamId + ":" + teamAuthToken;
+        String encodedAuth = Base64.getEncoder()
+                .encodeToString(auth.getBytes(StandardCharsets.US_ASCII));
+
+        String jsonBody = "{ \"verificationCode\": \"test-uuid\" }";
+
+        HttpClient client = HttpClient.newHttpClient();
+
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create("http://ctf26.vanierhacks.net/testingCategory/testingName"))
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Basic " + encodedAuth)
+                .POST(HttpRequest.BodyPublishers.ofString(jsonBody))
+                .build();
+
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
     }
 }
