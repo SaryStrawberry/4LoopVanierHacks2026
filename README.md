@@ -28,6 +28,15 @@ Things to do:
 
 
 
+
+
+
+<img width="616" height="727" alt="image" src="https://github.com/user-attachments/assets/7b475a3e-53a3-4be7-bdfe-2b1a64b565f2" />
+<img width="616" height="556" alt="image" src="https://github.com/user-attachments/assets/fb79cd18-95ef-443f-8b09-0486a4460f82" />
+
+
+
+
 ```Review challenges and sort into categories```
 
 # Notes and ideas:
