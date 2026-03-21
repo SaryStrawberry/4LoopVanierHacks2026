@@ -1,3 +1,15 @@
+Things to do:
+```
+1. Make team on Discord and ticket
+2. Make team on website
+3. review challenges and sort
+4. Make Java http request template
+
+
+
+```
+
+
 # The Strat:
 
 | Day 1        | Sara | Jerry | Kaiden | Will |
