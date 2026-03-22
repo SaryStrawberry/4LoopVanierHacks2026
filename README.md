@@ -7,11 +7,20 @@ Things to do:
 5. Make Java http request template
 6. Test Java http request on simplest challenge
 
-
-
+For second day:
+- http request for website, satellite
+- signal in the noise
+- alss 1
 
 ```
 
+
+Progress:
+```
+Junior's Website: ca2bbca1-182a-41c7-ac58-aeabca7cf5da --> code for http request
+Peek Inside the Satellite: 
+You Know Who to Call: 
+```
 
 # The Strat:
 
