@@ -11,7 +11,7 @@ async function main() {
                 ).toString("base64")
         },
         body: JSON.stringify({
-            verificationCode: "55e5fb54-f0c5-4c27-817f-4bf1348bead2"
+            verificationCode: "bb1adc8c-b6c8-4e41-aef2-b87581021ccc"
         })
     });
 

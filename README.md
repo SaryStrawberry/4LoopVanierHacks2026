@@ -49,3 +49,5 @@ You Know Who to Call:
 ```Review challenges and sort into categories```
 
 # Notes and ideas:
+![img.png](img.png)
+CPU process for addition
