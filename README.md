@@ -1,3 +1,10 @@
+
+#The 4Loop's repository for collaboriating on challenges in the 2026 VanierHacks hackathon.
+
+
+
+
+
 Things to do:
 ```
 1. Make team on Discord and ticket [DONE]
@@ -22,18 +29,7 @@ Peek Inside the Satellite:
 You Know Who to Call: 
 ```
 
-# The Strat:
-
-| Day 1        | Sara                               | Jerry                                      | Kaiden                                                   | Will                |
-|--------------|------------------------------------|--------------------------------------------|----------------------------------------------------------|---------------------|
-| First hour   | Make java project in existing repo | Make team on discord and wait for response | Research Java http request syntax and make template file | Working with Kaiden |
-| Until 6pm    |                                    |                                            |                                                          |                     |
-| Until 9pm    |                                    |                                            |                                                          |                     |
-| Overnight    |                                    |                                            |                                                          |                     |
-| Day 2        |                                    |                                            |                                                          |                     |
-| ------------ | ---                                | ---                                        | ---                                                      | ---                 |
-| 9am          |                                    |                                            |                                                          |                     |
-| Until 9      |                                    |                                            |                                                          |                     |
+                              |                                            |                                                          |                     |
 
 
 
