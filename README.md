@@ -1,5 +1,5 @@
 
-#The 4Loop's repository for collaboriating on challenges in the 2026 VanierHacks hackathon.
+# The 4Loop's repository for collaboriating on challenges in the 2026 VanierHacks hackathon.
 
 
 
