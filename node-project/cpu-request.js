@@ -1,24 +1,70 @@
 import { Buffer } from "buffer";
 import fs from "fs";
 
+function load(instr, registers) {
+    const value = instr & 0xFF;
+    registers[0] = value;
+}
+
+function move(instr, registers) {
+    const src = (instr >> 4) & 0b1111;
+    const dest = instr & 0b1111;
+
+    let value;
+
+    // get value
+    if (src === 8) {
+        value = inputQueue.length > 0 ? inputQueue.shift() : 0;
+    } else {
+        value = registers[src];
+    }
+
+    // send value
+    if (dest === 8) {
+        output.push(value);
+    } else {
+        registers[dest] = value;
+    }
+}
+
+function alu(instr, registers) {
+    const op = instr & 0b1111; // Lower 4 bits for the operation type
+
+    const a = registers[1] & 0xFF; // Register 1 value
+    const b = registers[2] & 0xFF; // Register 2 value
+    let result = 0;
+
+    switch (op) {
+        case 0: result = a + b; break;
+        case 1: result = a - b; break;
+        case 2: result = a & b; break;
+        case 3: result = a | b; break;
+        case 4: result = a ^ b; break;
+        case 5: result = ~(a | b) & 0xFF; break; // Bitwise NOR (flip OR result)
+        case 6: result = (a << b) & 0xFF; break; // Shift left
+        case 7: result = (a >>> b) & 0xFF; break; // Shift right (unsigned)
+        default: result = 0; break;
+    }
+    registers[3] = result & 0xFF; // Store result in Register 3 (mask to 8 bits)
+}
+
 
 function simulateChallenge(instructions, input) {
     const registers = new Array(8).fill(0);
     const inputQueue = [...input];
     const output = [];
 
+
     let pc = 0;
 
     while (pc < instructions.length) {
         const instr = instructions[pc];
-
         const opcode = (instr >> 8) & 0b11;
 
         //ALU
         if (opcode === 0b10) {
-            console.log("ALU instruction:", instr.toString(2));
+            alu(instr, registers);
         }
-
         // only handle MOVE (01)
         if (opcode === 0b01) {
             const src = (instr >> 4) & 0b1111;
